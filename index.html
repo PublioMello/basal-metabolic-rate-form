@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Gasto Calorico basal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calc-calorico">
+      <h1>Calculadora Gasto Calorico Basal</h1>
+      <form id="calc-form">
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" name="nome" id="nome" />
+          <div id="nome-error" style="color: red; display: none">
+            Por favor, insira seu nome
+          </div>
+        </div>
+        <div>
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+          </select>
+        </div>
+        <div>
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade" required />
+        </div>
+        <div>
+          <label for="altura">Altura(cm):</label>
+          <input type="number" name="altura" id="altura" required />
+        </div>
+        <div>
+          <label for="peso">Peso (kgs):</label>
+          <input type="number" name="peso" id="peso" required />
+        </div>
+        <input type="hidden" id="calorias" name="caloria" />
+        <button type="submit">Calcular</button>
+      </form>
+      <div id="resultado"></div>
+    </div>
+
+    <script src="script-calc.js"></script>
+  </body>
+</html>

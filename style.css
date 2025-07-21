@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+#calc-calorico {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 4vw; /* Tamanho relativo à largura da viewport (5%) */
+  white-space: nowrap;
+  max-width: fit-content;
+  font-size: clamp(18px, 4vw, 24px); /* Responsivo, mas limitado */
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+button[type="submit"] {
+  width: calc(100% - 15px);
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transform: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+select {
+  color: #555;
+  border-radius: 7px;
+  cursor: pointer;
+  width: calc(100% - 15px);
+  border: 1px solid #ccc;
+}
+/* Estilo da área de resultado */
+#resultado {
+  /* Margem superior */
+  margin-top: 20px;
+  /* Espaçamento interno */
+  padding: 10px;
+  /* Cor de fundo */
+  background-color: #f4f4f4;
+  /* Bordas arredondadas */
+  border-radius: 5px;
+  /* Borda sutil */
+  border: solid 1px #ddd;
+}
+
+/* Estilo dos parágrafos dentro da área de resultado */
+#resultado p {
+  /* Remove margens padrão */
+  margin: 0;
+  /* Cor do texto */
+  color: #333;
+}
