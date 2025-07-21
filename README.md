@@ -43,7 +43,7 @@ The result is then displayed directly on the screen after form submission.
 
 ## 📸 Screenshot
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## 🚀 How to Run
 
