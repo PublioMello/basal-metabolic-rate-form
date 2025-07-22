@@ -33,6 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
       2
     )}</p>`;
 
+    //adicionar o formdat
+    let dados = new FormData(formulario);
+    dados.append("gasto_calorico", gastoCalorico.toFixed(2));
+    for (let [chave, valor] of dados.entries()) {
+      console.log(chave + " : " + valor);
+    }
+
     //reseta o formulario
     formulario.reset();
   });
