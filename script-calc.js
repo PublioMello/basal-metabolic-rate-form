@@ -28,8 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       gastoCalorico = 655.1 + 9.653 * peso + 1.85 * altura - 4.676 * idade;
     }
+
+    let nomeUpper = nome.charAt(0).toUpperCase() + nome.slice(1).toLowerCase();
     //exibe o resultado
-    resultadoElement.innerHTML = `<p>${nome}, seu gasto calórico basal é de ${gastoCalorico.toFixed(
+    resultadoElement.innerHTML = `<p>${nomeUpper}, seu gasto calórico basal é de ${gastoCalorico.toFixed(
       2
     )}</p>`;
 
